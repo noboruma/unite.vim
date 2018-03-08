@@ -177,7 +177,7 @@ function! unite#mappings#define_default_mappings() abort "{{{
         \ '<Plug>(unite_all_exit)'
   execute s:nowait_map('n') '<CR>'
         \ '<Plug>(unite_do_default_action)'
-  execute s:nowait_map('n') '<Space>'
+  execute s:nowait_map('n') '<C-Space>'
         \ '<Plug>(unite_toggle_mark_current_candidate)'
   execute s:nowait_map('n') '<S-Space>'
         \ '<Plug>(unite_toggle_mark_current_candidate_up)'
@@ -282,7 +282,7 @@ function! unite#mappings#define_default_mappings() abort "{{{
   imap <buffer> <2-LeftMouse>   <Plug>(unite_do_default_action)
   imap <buffer> <RightMouse>    <Plug>(unite_exit)
 
-  imap <silent><buffer><expr> <Space>
+  imap <silent><buffer><expr> <C-Space>
         \ unite#smart_map(' ', "\<Plug>(unite_toggle_mark_current_candidate)")
   imap <silent><buffer><expr> <S-Space>
         \ unite#smart_map(' ', "\<Plug>(unite_toggle_mark_current_candidate_up)")
